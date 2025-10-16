@@ -1,0 +1,117 @@
+.vinde-scula-form {
+    max-width: 640px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333333;
+}
+
+.vinde-scula-progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    color: #999999;
+}
+
+.vinde-scula-progress-step.is-active {
+    color: #111111;
+    font-weight: 600;
+}
+
+.vinde-scula-form-step {
+    display: none;
+}
+
+.vinde-scula-form-step.is-active {
+    display: block;
+}
+
+.vinde-scula-options {
+    display: grid;
+    gap: 1rem;
+}
+
+.vinde-scula-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vinde-scula-option:hover,
+.vinde-scula-option:focus-within {
+    border-color: #f7b500;
+    box-shadow: 0 0 0 3px rgba(247, 181, 0, 0.2);
+}
+
+.vinde-scula-option input[type="radio"] {
+    accent-color: #f7b500;
+    width: 18px;
+    height: 18px;
+}
+
+.vinde-scula-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.vinde-scula-button {
+    appearance: none;
+    border: none;
+    border-radius: 999px;
+    padding: 0.75rem 1.5rem;
+    background-color: #f7b500;
+    color: #111111;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.vinde-scula-button:hover,
+.vinde-scula-button:focus {
+    background-color: #ffce33;
+    outline: none;
+    transform: translateY(-1px);
+}
+
+.vinde-scula-button:disabled {
+    background-color: #d8d8d8;
+    cursor: not-allowed;
+}
+
+.vinde-scula-form-message {
+    max-width: 640px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 1rem;
+    color: #333333;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 600px) {
+    .vinde-scula-form {
+        padding: 1.5rem;
+    }
+
+    .vinde-scula-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .vinde-scula-button {
+        width: 100%;
+    }
+}
